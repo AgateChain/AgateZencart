@@ -6,7 +6,7 @@ use Agate\Merchant;
 
 class Order extends Merchant
 {
-
+    //Convert currency to iUSD
     public static function convertCurToIUSD($url, $amount, $api_key, $currencySymbol) {
        error_log("Entered into Convert CAmount");
        error_log($url.'?api_key='.$api_key.'&currency='.$currencySymbol.'&amount='. $amount);
